@@ -1,0 +1,20 @@
+>>> dic = {'Tim':3, 'Kate':2}
+>>> print "Name\tAge"
+Name    Age
+>>> for i in dic.items():
+...    print "%s\t%s"%(i[0], i[1])
+... 
+Tim 3
+Kate    2
+>>> 
+
+
+>>> import csv
+>>> dic = {'Tim':3, 'Kate':2}
+>>> with open("output.csv", 'wb') as fp:
+...     root = csv.writer(fp, delimiter='\t')
+...     root.writerow(["Name", "Age"])
+...     for i,j in dic.items():
+...         root.writerow([i, j])
+... 
+>>> 
