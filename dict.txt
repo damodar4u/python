@@ -1,6 +1,9 @@
-echo "# python" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/damodar4u/python.git
-git push -u origin master
+def makeNewDictFromOld(oldDict):
+    newDict = {}
+    for key,value in oldDict.items():
+        if True:
+            newDict[key] = value #assign directly instead of append
+    return newDict
+
+dict_ = {"name":"name1","age":35}
+print makeNewDictFromOld(dict_)
